@@ -1,9 +1,12 @@
-import game from "./gameState";
+import game, {handleUserAction} from "./gameState";
+import { TICK_RATE} from './constants';
+import initButtons from './buttons';
 
-const TICK_RATE = 3000; //screaming case because it's a const that never changes.
+//screaming case because it's a const that never changes.
 
 function init () {
   console.log('starting game');
+  initButtons(handleUserAction);
 
   let nextTimeToTick = Date.now();
 
