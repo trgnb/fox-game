@@ -1,0 +1,80 @@
+/* general */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* frame and background */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.frame {
+  height: 762px;
+  width: 762px;
+  position: relative;
+}
+
+.inner {
+  position: relative;
+}
+
+.game {
+  width: 628px;
+  height: 577px;
+  position: absolute;
+  top: 62px;
+  left: 67px;
+}
+
+.game.night {
+  width: 716px;
+  top: 62px;
+  left: -19px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* buttons */
+
+.buttons {
+  position: absolute;
+  top: 674px;
+  left: 266px;
+  height: 71px;
+  width: 228px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.icons {
+  position: absolute;
+  top: 572px;
+  left:194px;
+  height: 67px;
+  width: 374px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.poop-bag {
+
+}
